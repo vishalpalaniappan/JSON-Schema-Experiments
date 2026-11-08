@@ -1,0 +1,21 @@
+{
+    "name": "JSON-Schema-Experiments",
+    "version": "0.0.0",
+    "description": "Contains JSON Schema experiments.",
+    "scripts": {
+        "start": ""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vishalpalaniappan/JSON-Schema-Experiments.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/vishalpalaniappan/JSON-Schema-Experiments/issues"
+    },
+    "homepage": "https://github.com/vishalpalaniappan/JSON-Schema-Experiments#readme",
+    "dependencies": {
+        "ajv": "^8.20.0"
+    }
+}
