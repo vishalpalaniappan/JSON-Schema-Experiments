@@ -6,7 +6,8 @@
     "additionalProperties": false,
     "properties": {
         "body": {
-            "type": "array"
+            "type": "array",
+            "items": {}
         },
         "name": {
             "type": "string"
@@ -20,5 +21,7 @@
         "body",
         "name",
         "type"
-    ]
+    ],
+    "definition": {
+    }
 }
