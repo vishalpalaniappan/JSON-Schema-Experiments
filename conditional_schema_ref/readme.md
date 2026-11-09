@@ -1,0 +1,1 @@
+Test schema that uses reusable rule to recursively process all the nodes in the JSON file being validated. This approach will be very effective specifying the schema for the artha meaning because I have schemas for each type of node and I can generate a schema that will reference the correct one based on the condition that is evaluated.

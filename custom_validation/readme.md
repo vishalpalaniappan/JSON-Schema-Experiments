@@ -1,0 +1,1 @@
+Validates the schema using a custom rule. I am experimenting with this to see the kinds of custom validation I can apply. The actual validation that this script does cannot be automatically done by the editor to display the message showing the error (as far as I know right now). Although, I am sure it is possible or at the very least can be implemented as some sort of plugin.
