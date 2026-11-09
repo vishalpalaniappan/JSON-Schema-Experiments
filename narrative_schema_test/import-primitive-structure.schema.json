@@ -1,0 +1,21 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "./import-structure.schema.json",
+    "title": "import-primitive-structure-schema",
+    "description": "Structural schema for import primitive.",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "type": {
+            "type": "string",
+            "const": "import"
+        },
+        "file": {},
+        "alias": {}
+    },
+    "required": [
+        "type",
+        "file",
+        "alias"
+    ]
+}

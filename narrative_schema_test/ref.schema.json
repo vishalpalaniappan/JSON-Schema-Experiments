@@ -46,6 +46,17 @@
               "then": {
                 "$ref": "./participant.schema.json"
               }
+            },
+            {
+              "if": {
+                "properties": {
+                  "type": { "const": "import" }
+                },
+                "required": ["type"]
+              },
+              "then": {
+                "$ref": "./import-primitive-structure.schema.json"
+              }
             }
           ],
           "properties": {

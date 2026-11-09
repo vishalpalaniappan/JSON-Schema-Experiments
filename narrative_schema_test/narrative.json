@@ -3,6 +3,11 @@
     "metadata": "Testing meaningful narrative validated using schema.",
     "narrative": [
         {
+            "type": "import",
+            "file": "./testBehaviorMeaning.ar",
+            "alias": "testBehaviorMeaning"
+        },
+        {
             "type": "behavior",
             "name": "testBehavior",
             "attributes": [
