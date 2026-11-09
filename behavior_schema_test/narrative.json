@@ -1,0 +1,26 @@
+{
+    "$schema": "./ref.schema.json",
+    "metadata": "Testing meaningful narrative validated using schema.",
+    "meaning": [
+        {
+            "type": "behavior",
+            "name": "testBehavior",
+            "attributes": [
+                {
+                    "name": "arg1",
+                    "value": "test"
+                },
+                {
+                    "name": "arg2",
+                    "value": "test2"
+                }
+            ],
+            "body": []
+        },
+        {
+            "type": "participant",
+            "name": "testParticipant",
+            "body": []
+        }
+    ]
+}
