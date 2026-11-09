@@ -1,0 +1,17 @@
+{
+    "$schema": "./items.schema.json",
+    "items": [
+        {
+            "type": "car"
+            
+        },
+        {
+            "type": "book",
+            "name": "Harry Potter"
+        },
+        {
+            "type": "book",
+        }
+
+    ]
+}
