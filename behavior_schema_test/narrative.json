@@ -1,7 +1,7 @@
 {
     "$schema": "./ref.schema.json",
     "metadata": "Testing meaningful narrative validated using schema.",
-    "meaning": [
+    "narrative": [
         {
             "type": "behavior",
             "name": "testBehavior",

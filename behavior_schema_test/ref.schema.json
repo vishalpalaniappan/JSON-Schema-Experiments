@@ -9,7 +9,7 @@
     "metadata": {
       "type": "string"
     },
-    "meaning": {
+    "narrative": {
         "$ref": "#/$defs/recursiveObjectCheck"
     }
   },
@@ -17,7 +17,7 @@
   "required": [
     "$schema",
     "metadata",
-    "meaning"
+    "narrative"
   ],
   "$defs": {
     "recursiveObjectCheck": {
