@@ -1,0 +1,1 @@
+Using reusable references to build schema for JSON file based on type of node (behavior, participants, primitive etc).

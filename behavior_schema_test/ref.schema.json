@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "./items.json",
+  "$ref": "#/$defs/recursiveObjectCheck",
+  "$defs": {
+    "recursiveObjectCheck": {
+      "anyOf": [
+        {
+          "type": "object",
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "type": { "const": "behavior" }
+                },
+                "required": ["type"]
+              },
+              "then": {
+                "$ref": "./behavior.schema.json"
+              }
+            }
+          ],
+          "properties": {
+            "items": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/recursiveObjectCheck" }
+            }
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/recursiveObjectCheck"
+          }
+        },
+        {
+          "type": "array",
+          "items": { "$ref": "#/$defs/recursiveObjectCheck" }
+        },
+        {
+          "type": ["string", "number", "boolean", "null"]
+        }
+      ]
+    }
+  }
+}
