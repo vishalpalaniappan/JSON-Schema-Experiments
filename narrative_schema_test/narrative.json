@@ -1,5 +1,5 @@
 {
-    "$schema": "./ref.schema.json",
+    "$schema": "./narrative.schema.json",
     "metadata": "Testing meaningful narrative validated using schema.",
     "narrative": [
         {
@@ -20,6 +20,11 @@
                     "value": "test2"
                 }
             ],
+            "body": []
+        },
+        {
+            "type": "participant",
+            "name": "testParticipant",
             "body": []
         },
         {
