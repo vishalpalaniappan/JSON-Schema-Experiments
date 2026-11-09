@@ -1,7 +1,24 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "./items.json",
-  "$ref": "#/$defs/recursiveObjectCheck",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "string"
+    },
+    "meaning": {
+        "$ref": "#/$defs/recursiveObjectCheck"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "metadata",
+    "meaning"
+  ],
   "$defs": {
     "recursiveObjectCheck": {
       "anyOf": [
@@ -17,6 +34,17 @@
               },
               "then": {
                 "$ref": "./behavior.schema.json"
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "type": { "const": "participant" }
+                },
+                "required": ["type"]
+              },
+              "then": {
+                "$ref": "./participant.schema.json"
               }
             }
           ],
