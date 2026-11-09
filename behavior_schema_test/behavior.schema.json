@@ -11,6 +11,9 @@
         "name": {
             "type": "string"
         },
+        "body": {
+            "type": "array"
+        },
         "attributes": {
             "type": "array",
             "items": {
@@ -29,8 +32,9 @@
         }
     },
     "required": [
+        "attributes",
+        "body",
         "name",
-        "type",
-        "attributes"
+        "type"
     ]
 }
