@@ -7,7 +7,16 @@
         },
         {
             "type": "book",
-            "name": "Harry Potter"
+            "name": "Harry Potter",
+            "items": [
+                {
+                    "type": "book",
+                    "name": "bookName"
+                },
+                {
+                    "type": "car"
+                }
+            ]
         },
         {
             "type": "book",
