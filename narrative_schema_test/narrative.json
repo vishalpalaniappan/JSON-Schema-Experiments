@@ -8,6 +8,11 @@
             "alias": "testBehaviorMeaning"
         },
         {
+            "type": "import",
+            "file": "./sample.ar",
+            "alias": "sample"
+        },
+        {
             "type": "behavior",
             "name": "testBehavior",
             "attributes": [
