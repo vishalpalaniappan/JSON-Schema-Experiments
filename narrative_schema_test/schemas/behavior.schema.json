@@ -1,7 +1,8 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "./behavior.schema.json",
-    "name": "behavior-schema",
+    "title": "behavior-schema",
+    "description": "A schema for a behavior in a narrative.",
     "type": "object",
     "properties": {
         "type": {
