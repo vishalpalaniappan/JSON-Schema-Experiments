@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "./car.schema.json",
+    "name": "car-schema",
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "string",
+            "const": "car"
+        },
+        "model": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "model",
+        "type"
+    ]
+}

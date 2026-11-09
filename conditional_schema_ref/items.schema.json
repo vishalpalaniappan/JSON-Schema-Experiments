@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "./items.json",
+  "$ref": "#/$defs/recursiveObjectCheck",
+  "$defs": {
+    "recursiveObjectCheck": {
+      "anyOf": [
+        {
+          "type": "object",
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "type": { "const": "car" }
+                },
+                "required": ["type"]
+              },
+              "then": {
+                "$ref": "./car.schema.json"
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "type": { "const": "book" }
+                },
+                "required": ["type"]
+              },
+              "then": {
+                "$ref": "./book.schema.json"
+              }
+            }
+          ],
+          "properties": {
+            "items": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/recursiveObjectCheck" }
+            }
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/recursiveObjectCheck"
+          }
+        },
+        {
+          "type": "array",
+          "items": { "$ref": "#/$defs/recursiveObjectCheck" }
+        },
+        {
+          "type": ["string", "number", "boolean", "null"]
+        }
+      ]
+    }
+  }
+}

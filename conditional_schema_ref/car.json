@@ -1,0 +1,5 @@
+{
+    "$schema": "./car.schema.json",
+    "type": "car",
+    "model": "honda"
+}

@@ -1,0 +1,5 @@
+{
+    "$schema": "./book.schema.json",
+    "type": "book",
+    "name": "harry potter"
+}
