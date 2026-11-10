@@ -13,7 +13,12 @@
             "type": "string"
         },
         "body": {
-            "type": "array"
+            "type": "array",
+            "items": {
+                "anyOf": [
+                    { "$ref": "../shared-primitive.schema.json#/$defs/Equals" }
+                ]
+            }
         },
         "attributes": {
             "type": "array",

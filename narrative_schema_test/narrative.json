@@ -25,7 +25,14 @@
                     "value": "test2"
                 }
             ],
-            "body": []
+            "body": [
+                {
+                    "name": "equals",
+                    "alias": "test",
+                    "value1": "a",
+                    "value2": "b"
+                }
+            ]
         },
         {
             "type": "participant",
